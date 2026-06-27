@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обход ссылок ZEN-API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Обход ссылок через ZEN-API</h1>
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="Введите URL для обхода (например, https://link-center.net/...)">
+            <button id="bypassBtn">Обойти</button>
+            <button id="refreshBtn">Принудительно обновить</button>
+        </div>
+        <div id="resultArea">
+            <p id="statusText">Ожидание запроса...</p>
+            <div id="resultContent" style="display:none;">
+                <p><strong>Результат:</strong> <a id="resultLink" href="#" target="_blank"></a></p>
+                <p><strong>Время выполнения:</strong> <span id="timeText"></span> с</p>
+            </div>
+            <pre id="rawResponse" style="display:none;"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
